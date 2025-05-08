@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Checkout - Antique Aangan</title>
+
+  <!-- css -->
+  <link rel="stylesheet" href="basic_style.css" />
+  <link rel="stylesheet" href="checkout.css" />
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+   <!--  Navbar -->
+   <navbar class="top-nav">
+    <a href="cart screen.html">
+    <i class="fa-solid fa-arrow-left  text-primary text-3xl back-btn"></i></a>
+    <p class="screen-title">Checkout</p>
+    <div class="nav-icons">
+      <button class="icon-button"><i class="fa-regular fa-heart base-icon"></i></button>
+      <button class="icon-button"><i class="fa-solid fa-cart-shopping base-icon"></i></i></button>
+    </div>
+  </navbar>
+  
+  <div class="background-container">
+    <div class="overlay"></div>
+
+    <div class="container">
+
+    <div class="checkout-section">
+      <h4 class="section-title">Delivery Address</h4>
+      <p class="section-content">123, Heritage Street, Jaipur, Rajasthan</p>
+      <button class="edit-btn">Edit</button>
+    </div>
+
+    <div class="checkout-section">
+      <h4 class="section-title">Payment Method</h4>
+      <p class="section-content">Credit Card ending in 1234</p>
+      <button class="edit-btn">Change</button>
+    </div>
+
+    <div class="checkout-section">
+      <h4 class="section-title">Order Summary</h4>
+      <p class="section-content">2 Items - ₹72,000</p>
+      <p class="section-content">Discount - ₹1000</p>
+      <p class="section-content">Shipping - ₹200</p>
+      <p class="section-total">Total: ₹71,000</p>
+    </div>
+
+    <button class="button-signup">Place Order</button>
+
+    </div>
+  </div>
+    <!-- Bottom Navigation -->
+    <footer class="bottom-nav">
+      <a href="home screen.html" class="flex-col place-items-items gap-5">
+        <i class="fa-solid fa-house"></i>
+        <p>Home</p>
+      </a>
+      <a href="search screen.html" class="flex-col place-items-items gap-5">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <p>Search</p>
+      </a>
+      <a class="flex-col place-items-items gap-5">
+        <i class="fa-solid fa-user"></i>
+        <p>Profile</p>
+      </a>
+    </footer>
+  <script>
+    $('.button-signup').click(function () {
+      // Clear the container content
+      $('.content').html('');
+  
+      // Create success message
+      const message = $('<h2 class="signup-success" style="margin-bottom: 10px; color: green;">Ordered successfully</h2>');
+  
+      // Create "Continue Shopping" button
+      const continueBtn = $('<button class="explore-btn">Continue Shopping</button>');
+  
+      // Optionally add click event to continue button
+      continueBtn.click(function () {
+        window.location.href = 'product_list.html'; // Change to your home or shopping page
+      });
+  
+      // Append both to container
+      $('.container').append(message, continueBtn);
+    });
+  </script>
+  
+</body>
+</html>

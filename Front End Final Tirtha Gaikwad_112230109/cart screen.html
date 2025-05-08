@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+        <!-- basic style -->
+        <link rel="stylesheet" href="basic_style.css"/>
+
+        <link rel="stylesheet" href="cart.css">
+
+        <!-- font awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+    <div class="background-container">
+        <div class="overlay"></div>
+
+    <!--  Navbar -->
+    <navbar class="top-nav">
+        <a href="product_description.html"><i class="fa-solid fa-arrow-left  text-primary text-3xl back-btn"></i></a>
+            <p class="brand-title">Your Cart</p>
+            <div class="nav-icons">
+              <button class="icon-button"><i class="fa-regular fa-heart base-icon"></i></button>
+              <button class="icon-button"><i class="fa-solid fa-cart-shopping base-icon"></i></i></button>
+            </div>
+          </navbar>
+      
+    <section class="progress-bar">
+        <span class="step active">Cart</span>
+        <span class="step">Address</span>
+        <span class="step">Payment</span>
+    </section>
+
+    <section class="items-section">
+        <h2>Items Selected</h2>
+
+        <div class="item-card">
+            <img src="https://5.imimg.com/data5/SELLER/Default/2020/9/TF/PB/JL/111586069/wooden-rocking-chair-500x500.jpg" alt="Royal Indian Armchair">
+            <div class="item-info">
+                <h2>Antique Wooden Chair</h2>
+                <p class="price">₹60,000</p>
+                <div class="qty-section">
+                    <label>Qty:</label>
+                    <select>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </div>
+            </div>
+            <button class="remove-btn">Remove</button>
+        </div>
+
+        <div class="item-card">
+            <img src="https://www.lakdi.com/cdn/shop/files/Maharaja_luxury_carved_wooden_chair_in_teakwood_for_multi_porpuses_best_quality_matiral_with_golden_deco_polished_-_-3760916.jpg?v=1742459032" alt="British Chair">
+            <div class="item-info">
+                <h3>Royal Indian Armchair</h3>
+                <p class="price">₹12,000</p>
+                <div class="qty-section">
+                    <label>Qty:</label>
+                    <select>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </div>
+            </div>
+            <button class="remove-btn">Remove</button>
+        </div>
+    </section>
+
+    <section class="coupons-section">
+        <h2>Coupons</h2>
+        <div class="coupon-header">
+            <span>🏷 Best Coupons For You</span>
+            <button class="all-coupons-btn">All Coupons →</button>
+        </div>
+
+        <div class="coupon-card">
+            <p><strong>Extra Rs. 500/- OFF</strong></p>
+            <p>Rs. 200 off on minimum purchase...</p>
+            <span class="coupon-code">AA0988JC</span>
+        </div>
+
+        <div class="coupon-card">
+            <p><strong>Extra 10% OFF</strong></p>
+            <p>10% off on minimum purchase...</p>
+            <span class="coupon-code">AA2645ZZ</span>
+        </div>
+    </section>
+
+        <section class="price-details">
+            <h2>Price Details (2 items)</h2>
+             <div class="price-row"><span>Total MRP</span><span>₹72,000</span></div>
+             <div class="price-row"><span>Discount on MRP</span><span>₹1,000</span></div>
+             <div class="total-amount"><span>Total Amount</span><span>₹71,000</span></div>
+             <a href="checkout screen.html">
+                <div class="btn-center">
+                <button class="checkout-btn">CHECKOUT</button></div></a>
+        </section>
+
+            <!-- Bottom Navigation -->
+    <footer class="bottom-nav">
+        <a href="home screen.html" class="flex-col place-items-items gap-5">
+          <i class="fa-solid fa-house"></i>
+          <p>Home</p>
+        </a>
+        <a href="search screen.html" class="flex-col place-items-items gap-5">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <p>Search</p>
+        </a>
+        <a class="flex-col place-items-items gap-5">
+          <i class="fa-solid fa-user"></i>
+          <p>Profile</p>
+        </a>
+      </footer>
+      </div>
+
+</body>
+</html>
